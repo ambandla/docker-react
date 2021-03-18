@@ -7,4 +7,4 @@ before_install:
   - docker build -t bandla/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run CI=true bandla/docker-react npm run test
+  - docker run -e CI=true bandla/docker-react npm run test
